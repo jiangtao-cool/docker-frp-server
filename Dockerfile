@@ -7,5 +7,7 @@ RUN chmod +x /usr/local/bin/frps && \
 
 COPY frps.ini /etc/frp/
 
+EXPOSE 7000
+
 CMD ["frps", "-c", "/etc/frp/frps.ini"]
 
